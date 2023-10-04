@@ -165,19 +165,19 @@ first div in the grid  and place it in the grid. */
 }
 
 .about {
-  grid-row: 2;
+  grid-row: 2 / span 1;
 }
 
 .method {
-  grid-row: 3;
+  grid-row: 3 / span 1;
 }
 
 .clients {
-  grid-row: 4;
+  grid-row: 4 / span 1;
 }
 
 .contact {
-  grid-row: 5;
+  grid-row: 5 / span 1;
 }
 
 .about-image, .method-image, .clients-image, .contact-image {
@@ -205,14 +205,14 @@ first div in the grid  and place it in the grid. */
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 
  .text-block {
+  margin: auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  max-height: 100%;
-}
 
+}
 /* Add your media query here */
 @media screen and (min-width: 800px) {
 
